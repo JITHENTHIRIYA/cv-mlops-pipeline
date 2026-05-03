@@ -28,7 +28,7 @@ jobs:
       run: |
         pytest
         
-  build-and-push:
+    build-and-push:
     needs: test
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -50,8 +50,4 @@ jobs:
       with:
         context: .
         push: true
-<<<<<<< HEAD
         tags: jithenthiriya961/cv-mlops-pipeline:latest
-=======
-        tags: jithenthiriya/cv-mlops-pipeline:latest
->>>>>>> ec7f8c8a5e91a233483e8b3d73930279d7324015
