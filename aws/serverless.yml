@@ -1,0 +1,21 @@
+service: cv-mlops-api
+
+provider:
+  name: aws
+  runtime: python3.9
+  region: us-east-1
+  memorySize: 1024
+  timeout: 30
+  
+functions:
+  api:
+    handler: app.lambda_handler.handler
+    events:
+      - http:
+          path: /
+          method: any
+      - http:
+          path: /{proxy+}
+          method: any
+    environment:
+      STAGE: ${opt:stage, 'dev'}
