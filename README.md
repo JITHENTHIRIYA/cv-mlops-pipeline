@@ -1,6 +1,6 @@
 # CV MLOps Pipeline
 
-![CI/CD Pipeline](https://github.com/yourusername/cv-mlops-pipeline/actions/workflows/ci-cd.yml/badge.svg)
+![CI/CD Pipeline](https://github.com/JITHENTHIRIYA/cv-mlops-pipeline/actions/workflows/ci-cd.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.9-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.70%2B-009688?logo=fastapi)
 ![PyTorch](https://img.shields.io/badge/PyTorch-1.10%2B-EE4C2C?logo=pytorch)
@@ -124,7 +124,7 @@ cv-mlops-pipeline/
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/cv-mlops-pipeline.git
+git clone https://github.com/JITHENTHIRIYA/cv-mlops-pipeline.git
 cd cv-mlops-pipeline
 
 python -m venv venv
@@ -231,8 +231,8 @@ Tests cover:
 The CI/CD pipeline automatically builds and pushes to DockerHub on merges to `main`. To push manually:
 
 ```bash
-docker build -t yourusername/cv-mlops-pipeline:latest .
-docker push yourusername/cv-mlops-pipeline:latest
+docker build -t jithenthiriya/cv-mlops-pipeline:latest .
+docker push jithenthiriya/cv-mlops-pipeline:latest
 ```
 
 ### AWS Lambda (Serverless)

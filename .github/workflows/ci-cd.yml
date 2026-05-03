@@ -50,4 +50,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: yourusername/cv-mlops-pipeline:latest
+        tags: jithenthiriya/cv-mlops-pipeline:latest
